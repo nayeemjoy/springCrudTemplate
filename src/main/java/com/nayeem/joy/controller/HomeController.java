@@ -1,4 +1,4 @@
-package com.nayeem.joy;
+package com.nayeem.joy.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
