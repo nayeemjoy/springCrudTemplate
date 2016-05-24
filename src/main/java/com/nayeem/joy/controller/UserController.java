@@ -12,7 +12,6 @@ import com.nayeem.joy.entity.User;
 
 @Controller
 public class UserController {
-	
 	@RequestMapping(value = "/users", params = "register")
 	public String createForm(){
 		return "user/register";
@@ -20,6 +19,7 @@ public class UserController {
 	
 	@RequestMapping(value = "/users", method = RequestMethod.POST)
 	public String saveUser(User user){
+		
 		
 		System.out.println(user.toString());
 		return "redirect:/user/"+user.getUsername();
