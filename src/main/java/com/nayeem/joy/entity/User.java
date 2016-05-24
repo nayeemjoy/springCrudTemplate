@@ -1,6 +1,14 @@
 package com.nayeem.joy.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity(name = "users")
 public class User {
+	
+	@Id
+	@GeneratedValue
 	protected int id;
 	protected String username;
 	
