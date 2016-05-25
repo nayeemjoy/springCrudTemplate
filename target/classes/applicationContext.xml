@@ -28,7 +28,7 @@
             http://www.springframework.org/schema/jms/spring-jms-2.5.xsd">
 
   <context:annotation-config />
-  <context:component-scan base-package="bookstore" />
+  <context:component-scan base-package="com.nayeem.joy" />
   <tx:annotation-driven />
   <bean class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor"/>
   <bean id="dataSource1" class="org.springframework.jdbc.datasource.DriverManagerDataSource">

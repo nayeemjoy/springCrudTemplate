@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form method="post" action="users">
+	<form method="post" action="http://localhost:8080/spring_template/user/store">
 		Username : <input type="text" name="username"/>
 		Password : <input type="password" name="password"/>
 		<input type="submit" value="Register"/>
