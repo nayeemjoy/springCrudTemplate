@@ -19,28 +19,14 @@ public class UserController {
 	@Autowired
 	private BaseDao baseDao;
 	
-	@RequestMapping(value = "user/create")
-	public String createForm(){
-		System.out.println("Register");
-		return "user/register";
-	}
-	
-	@RequestMapping(value = "/user/store", method = RequestMethod.POST)
-	public String saveUser(User user){
+	@RequestMapping(value = "/users")
+	public String users(){
 		
-		baseDao.persist(user);
-		System.out.println(user.toString());
-		return "user/success";
+		return "index";
 	}
-	@RequestMapping(value = "/user/{userId}")
-	public String getUser(@PathVariable String userId , Map<String, Object> model){
-		System.out.println(userId);
-		User user = new User();
-		user.setUsername(userId);
-		user.setPassword("a");
-//		System.out.println(user.toString());
-		
-		model.put("user", user);
-		return "user/view";
+	@RequestMapping(value = "/user/create")
+	public String create(){
+		System.out.println("Create Form");
+		return "index";
 	}
 }
